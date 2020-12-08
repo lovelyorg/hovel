@@ -1,0 +1,93 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"console.log": {
+		"prefix": "lg",
+		"body": [
+			"console.log($1)$0",
+		]
+	},
+	"console.error": {
+		"prefix": "error",
+		"body": [
+			"console.error($1)$0",
+		]
+	},
+	"Array.forEach": {
+		"prefix": ".forEach",
+		"body": [
+			".forEach(m => {",
+			"    $0",
+			"})"
+		],
+	},
+	"Array.map": {
+		"prefix": ".map",
+		"body": [
+			".map(m => {",
+			"    $0",
+			"})"
+		],
+	},
+	"Array.filter": {
+		"prefix": ".filter",
+		"body": [
+			".filter(m => $0)",
+		],
+	},
+	"trycatch": {
+		"prefix": "trycatch",
+		"body": [
+			"try {",
+			"    $0",
+			"} catch (e) {",
+			"    console.error(e)",
+			"}",
+		],
+	},
+	"function": {
+		"prefix": "function",
+		"body": [
+			"function $1(props) {",
+			"    $0",
+			"}"
+		],
+	},
+	"constructor": {
+		"prefix": "constructor",
+		"body": [
+			"constructor(props) {",
+			"    $1",
+			"}"
+		],
+	},
+	"return": {
+		"prefix": "rr",
+		"body": [
+			"return $0",
+		]
+	},
+	"const": {
+		"prefix": "cc",
+		"body": [
+			"const $0",
+		]
+	},
+	"let": {
+		"prefix": "ll",
+		"body": [
+			"let $0",
+		]
+	},
+}
